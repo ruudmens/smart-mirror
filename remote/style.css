@@ -16,6 +16,7 @@ nav {
 .footer {
   position: absolute;
   bottom: 0;
+  left:0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;
@@ -30,9 +31,9 @@ nav {
 
 .navbar-config {
   font-size: x-large;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    float: right;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  float: right;
 }
 
 /* Custom page CSS
@@ -51,9 +52,32 @@ body > .container {
   padding-left: 15px;
 }
 
+p.lead {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#speech-error {
+  margin-top: 15px;
+  padding: 5px;
+}
+#speak{
+  cursor: pointer;
+}
+.redMic {
+  color: darkred;
+}
+.blackMic {
+  color: black;
+}
+.greyMic {
+  color: grey;
+}
+
 code {
   font-size: 80%;
 }
+
 
 .connected {
   background-color: #5cb85c;
@@ -90,6 +114,16 @@ form.jsonform-hasrequired:after {
   display: block;
   color: red;
   padding-top: 1em;
+}
+#out {
+  display:none;
+}
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+#outMsg {
+  padding-left: 20px;
 }
 #form select { width: auto; }
 #form .add-on {

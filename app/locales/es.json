@@ -185,5 +185,31 @@
             "voice": ":state las luces a *action",
             "description": "Cambia el estado de las luces."
         }
+    },
+    "fitbit": {
+        "user": "Usuario: ",
+        "averageSteps": "Promedio de Pasos: ",
+        "batteryStatus": "Estado de la batería: ",
+        "today": "Hoy",
+        "steps": "Pasos",
+        "averageSteps": "Pasos al día",
+        "caloriesBurned": "Calorías quemadas",
+        "lastSync": "Última sincronización",
+        "average": "Promedio",
+        "activeMinutes": "Minutos activos",
+        "distance": "km",
+        "floors": "Pisos",
+        "topBadges": "Las mejores insignias",
+        "sleep": "Dormir",
+        "lastNight": "Anoche",
+        "awake": "Despierto",
+        "restless": "Inquieto",
+        "hours": "horas",
+        "km": "km",
+        "miles": "mi",
+        "minutes": "min",
+        "times": "x",
+        "restingHR": "Frecuencia cardíaca en reposo",
+        "bpm": "bpm"
     }
 }

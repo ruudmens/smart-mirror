@@ -136,6 +136,14 @@ dt {
     margin-right: auto;
 }
 
+span.command-prev {
+    float:left;
+}
+
+span.command-next {
+    float:right;
+}
+
 ul.calendar {
     list-style: none;
     font-size: 22px;
@@ -233,7 +241,7 @@ ul.calendar {
 
 .fitbit-title {
     margin-right: 10px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .fitbit-subtitle {
@@ -258,6 +266,23 @@ ul.calendar {
     width: 450px;
 }
 
+.fitbit-goals {
+    float: right;
+    width: 60%;
+}
+
+.fitbit-progress-bar {
+    position: relative;
+    width: 50%;
+    height: 5px;
+    background-color: grey;
+}
+
+.fitbit-progress {
+    position: absolute;
+    height: 100%;
+}
+
 .playing-track img {
     float: left;
     margin-right: 5px;
@@ -267,6 +292,14 @@ ul.calendar {
     text-align: right;
     margin-top: 10px;
     margin-right: 10px;
+}
+
+.stock-change-positive {
+    color: green;
+}
+
+.stock-change-negative {
+    color: red;
 }
 
 .time-to {
@@ -345,11 +378,15 @@ ul.calendar {
     height: 1080px;
 }
 
-.reminders-container {
+.reminders-container, .todoist-container {
     width: 250px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+}
+
+.todoist {
+    padding: 10px 10px 10px 80px;
 }
 
 .contents-box {
@@ -496,7 +533,7 @@ ul.calendar {
 }
 
 .news {
-    height: 75px; 
+    height: 75px;
     margin-bottom: 5px;
 }
 

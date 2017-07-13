@@ -11,6 +11,7 @@
                     "enum":[
                       "monitor",
                       "tv",
+                      "energy",
                       "disabled"
                     ]
                 },
@@ -27,7 +28,7 @@
                 "wakeCmd": {
                     "type": "string",
                     "title": "Command used to wake up Smart Mirror",
-                    "default": "sudo ./scripts/raspi-monitor.sh off > /dev/null 2>&1"
+                    "default": "sudo ./scripts/raspi-monitor.sh on > /dev/null 2>&1"
                 },
                 "sleepCmd": {
                     "type": "string",
@@ -48,7 +49,7 @@
                 "pin": {
                     "type": "string",
                     "title": "PIN the for output on PIR module.",
-                    "description": "based on raspi-io... https://github.com/nebrius/raspi-io/",
+                    "description": "based on <a href=\"https://github.com/nebrius/raspi-io/\">raspio-io</a>",
                     "default":"GPIO26"
                 }
             }
@@ -67,6 +68,7 @@
               "titleMap":{
                 "monitor":"Monitor",
                 "tv":"TV",
+                "energy":"Energy Star TV",
                 "disabled":"Disabled"
               },
               "items":[
@@ -74,20 +76,62 @@
                   "type":"section",
                   "items": [
                     {
-                      "key": "autoTimer.autoWake",
-                      "allowempty":true
+                      "key": "autoTimer.autoWake"
                     },
                     {
-                      "key": "autoTimer.autoSleep",
-                      "allowempty":true
+                      "key": "autoTimer.autoSleep"
+                    },
+                    {
+                      "key": "autoTimer.wakeCmd"
+                    },
+                    {
+                      "key": "autoTimer.sleepCmd"
+                    },
+                    {
+                      "key":"motion",
+                      "expandable":true
+                    }
+                  ]
+                },
+                {
+                  "type":"section",
+                  "items":[
+                    {
+                      "key": "autoTimer.autoWake"
+                    },
+                    {
+                      "key": "autoTimer.autoSleep"
                     },
                     {
                       "key": "autoTimer.wakeCmd",
-                      "allowempty":true
+                      "type":"hidden"
                     },
                     {
                       "key": "autoTimer.sleepCmd",
-                      "allowempty":true
+                      "type":"hidden"
+                    },
+                    {
+                      "key":"motion",
+                      "expandable":true
+                    }
+                  ]
+                },
+                {
+                  "type":"section",
+                  "items":[
+                    {
+                      "key": "autoTimer.autoWake"
+                    },
+                    {
+                      "key": "autoTimer.autoSleep"
+                    },
+                    {
+                      "key": "autoTimer.wakeCmd",
+                      "type":"hidden"
+                    },
+                    {
+                      "key": "autoTimer.sleepCmd",
+                      "type":"hidden"
                     },
                     {
                       "key":"motion",
@@ -100,55 +144,18 @@
                   "items":[
                     {
                       "key": "autoTimer.autoWake",
-                      "allowempty":true
-                    },
-                    {
-                      "key": "autoTimer.autoSleep",
-                      "allowempty":true
-                    },
-                    {
-                      "key": "autoTimer.wakeCmd",
-                      "allowempty":true,
-                      "type":"hidden"
-                    },
-                    {
-                      "key": "autoTimer.sleepCmd",
-                      "allowempty":true,
-                      "type":"hidden"
-                    },
-                    {
-                      "key":"motion",
-                      "expandable":true
-                    }
-                  ]
-                },
-                {
-                  "type":"section",
-                  "items":[
-                    {
-                      "key": "autoTimer.autoWake",
-                      "allowempty":true,
                       "type":"hidden"
                     },
                     {
                       "key": "autoTimer.autoSleep",
-                      "allowempty":true,
                       "type":"hidden"
                     },
                     {
                       "key": "autoTimer.wakeCmd",
-                      "allowempty":true,
                       "type":"hidden"
                     },
                     {
                       "key": "autoTimer.sleepCmd",
-                      "allowempty":true,
-                      "type":"hidden"
-                    },
-                    {
-                      "key":"motion",
-                      "expandable":true,
-                      "order":0,
                       "type":"hidden"
                     }
                   ]

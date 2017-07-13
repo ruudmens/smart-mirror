@@ -3,7 +3,7 @@
 set -e
 
 # Supported versions of node: v4.x, v5.x
-NODE_MINIMUM_VERSION="v4.0.0"
+NODE_MINIMUM_VERSION="v6.0.0"
 NODE_STABLE_VERSION="6.x"
 
 # Compare node versions.
@@ -149,19 +149,24 @@ if ! grep -q '(smart-mirror)' ~/.config/lxsession/LXDE-pi/autostart; then
 @xset dpms 0 0 0' ~/.config/lxsession/LXDE-pi/autostart
 fi
 
+# Add start commands in the user's bashrc.
+echo "export MIRROR_HOME=~/smart-mirror" >> ~/.bashrc
+echo "run_mirror () { ( cd \$MIRROR_HOME && DISPLAY=:0 npm run \"\$@\" ); }" >> ~/.bashrc
+echo "alias mirror=run_mirror" >> ~/.bashrc
+cd ~ && source .bashrc
 
 # The mirror is now installed, yay!
 cat << "EOF"
 
         |        The smart-mirror is now installed!
-       / \       
-      / _ \      For configuration instructions, check out the documentation at:
+       / \
+      / _ \      To configure audio input, speech, and the mirror itself, please visit:
      |.o '.|     http://docs.smart-mirror.io
-     |'._.'|     
-     |     |     To start your mirror you can run:
-   ,'|  |  |`.   > npm start
-  /  |  |  |  \  Or if you are running over SSH:
-  |,-'--|--'-.|  > DISPLAY=:0 npm start
+     |'._.'|
+     |     |     To start your mirror:
+   ,'|  |  |`.   > mirror start
+  /  |  |  |  \
+  |,-'--|--'-.|
   
 EOF
 # ASCII art found on http://textart.io/

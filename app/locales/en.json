@@ -50,6 +50,21 @@
             "voice": "What can I say",
             "description": "Shows a list of voice commands available to you."
         },
+        "list-next": {
+            "text": "Next page",
+            "voice": "next(-page) (command) (page)",
+            "description": "Shows next page of voice commands available to you. (only available when command list is displayed)"
+        },
+        "list-prev": {
+            "text": "Previous Page",
+            "voice": "previous(-page) (command) (page)",
+            "description": "Shows previous page of voice commands available to you. (only available when command list is displayed)"
+        },
+        "list-page": {
+            "text": "Jump to Page _______",
+            "voice": "(jump to) (go to) (command) page *pageNum",
+            "description": "Shows a specific page of voice commands available to you. (only available when command list is displayed)"
+        },
         "home": {
             "text": "Go home",
             "voice": "Go home",
@@ -189,6 +204,76 @@
             "text": "Show Remote Link",
             "voice": "Show remote (QR code) (QR) (link)",
             "description": "Show the local IP of the Remote App URL"
+        },
+        "todoist_show": {
+            "text": "Show (my) ________ list",
+            "voice": "Show (my) *project list",
+            "description": "Show requested list."
+        },
+        "todoist_add": {
+            "text": "Add ________ to (my) ________ list",
+            "voice": "Add *element to (my) *project list",
+            "description": "Add item to requested list."
+        },
+        "todoist_remove": {
+            "text": "Remove ________ from (my) ________ list",
+            "voice": "Remove *element from (my) *project list",
+            "description": "Remove item from requested list."
         }
-    }
+    },
+    "fitbit": {
+        "user": "User: ",
+        "averageSteps": "Average Steps: ",
+        "batteryStatus": "Battery Status: ",
+        "today": "Today",
+        "steps": "steps",
+        "caloriesBurned": "calories burned",
+        "lastSync": "Last Sync",
+        "average": "Average",
+        "activeMinutes": "active minutes",
+        "distance": "km",
+        "floors": "floors",
+        "topBadges": "Top Badges",
+        "sleep": "Sleep",
+        "lastNight": "Last Night",
+        "awake": "Awake",
+        "restless": "Restless",
+        "hours": "hrs",
+        "km": "km",
+        "miles": "mi",
+        "minutes": "min",
+        "times": "x",
+        "restingHR": "resting heart rate",
+        "bpm": "bpm"
+    },
+    "units": {
+    "zero": 0,
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+    "eleven": 11,
+    "twelve": 12,
+    "thirteen": 13,
+    "fourteen": 14,
+    "fifteen": 15,
+    "sixteen": 16,
+    "seventeen": 17,
+    "eighteen": 18,
+    "nineteen": 19,
+    "twenty": 20,
+    "thirty": 30,
+    "forty": 40,
+    "fifty": 50,
+    "sixty": 60,
+    "seventy": 70,
+    "eighty": 80,
+    "ninety": 90
+  }
 }

@@ -190,5 +190,31 @@
             "voice": "(Schalte) (das) (die) Licht(er) *action",
             "description": "Steuert Farbe und Helligkeit von Lichtern."
         }
+    },
+    "fitbit": {
+        "user": "Benutzer: ",
+        "averageSteps": "Durchschnittliche Schritte: ",
+        "batteryStatus": "Batteriestatus: ",
+        "today": "Heute",
+        "steps": "Schritte",
+        "averageSteps": "Schritte pro Tag",
+        "caloriesBurned": "Kalorien verbrannt",
+        "lastSync": "Letzte sync",
+        "average": "Durchschnittlich",
+        "activeMinutes": "Aktive Minuten",
+        "distance": "km",
+        "floors": "Fußböden",
+        "topBadges": "Top Abzeichen",
+        "sleep": "Schlaf",
+        "lastNight": "Letzter Nacht",
+        "awake": "Wach",
+        "restless": "Unruhig",
+        "hours": "std.",
+        "km": "km",
+        "miles": "mi",
+        "minutes": "min",
+        "times": "x",
+        "restingHR": "DRuhepuls",
+        "bpm": "bpm"
     }
 }
